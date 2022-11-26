@@ -1,0 +1,1 @@
+18 year old programmer from Volgograd. Frontend, backend developer. Dovelop with python, flask, c++, SQL, html, jinja, css. Made tabs 2d graf and physics.

@@ -1,0 +1,109 @@
+@import 'mixins';
+
+.findus{
+    background-image: url(./../assest/BG.png);
+    position: absolute;
+    width: 1920px;
+    height: 992px;
+    left: 0px;
+    top: 6243px;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 120px;
+
+        position: absolute;
+        width: 1300px;
+        height: 736px;
+        left: 310px;
+        top: 128px;
+
+        &__contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 64px;
+
+            width: 513px;
+            height: 488px;
+
+            &__title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 8px;
+
+                width: 215px;
+                height: 138px;
+
+                &__text1{
+                    @include text(76px, 30px, center, #FFFFFF,'Cormorant Upright', 700, 23px, 0.04em, 0);
+                }
+
+                &__text2{
+                    @include text(230px, 83px, left, #DCCA87, 'Cormorant Upright', 600, 64px, 0.04em, 0);
+                }
+            }
+
+            &__content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 32px;
+
+                width: 513px;
+                height: 178px;
+
+                &__text{
+                    @include text(513px, 28px, left, #aaaaaa, 'Open Sans', 400, 16px, 0.04em, 0);
+                }
+
+                &__oh{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 16px;
+
+                    width: 245px;
+                    height: 118px;
+
+                    &__h{
+                        @include text(150px, 30px, left, #DCCA87, 'Cormorant Upright', 700, 23px, 0.04em, 0);
+                    }
+
+                    &__p{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding: 0px;
+                        gap: 16px;
+
+                        width: 245px;
+                        height: 72px;
+
+                        &__text{
+                            @include text(250px, 28px, left, #FFFFFF, 'Open Sans', 400, 16px, 0.04em, 0);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.imgfindus{
+    width: 667px;
+    height: 736px;
+}

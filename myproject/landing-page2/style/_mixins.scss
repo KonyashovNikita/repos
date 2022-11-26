@@ -1,0 +1,41 @@
+@mixin text($width, $h, $align, $color, $font, $fw, $fsz, $lsp, $pl){
+    width: $width;
+    height: $h;
+    
+    font-family: $font;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: 130%;
+    padding-left: $pl;
+    text-align: $align;
+    letter-spacing: $lsp;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    
+    color: $color;
+}
+
+@mixin button($width){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+    gap: 10px;
+    color: #0C0C0C;
+
+
+    width: 64px + $width;
+    height: 44px;
+    
+    background: #DCCA87;
+
+    border: 1px solid #DCCA87;
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    text-transform: capitalize;
+}

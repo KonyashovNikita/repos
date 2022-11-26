@@ -1,0 +1,36 @@
+@import 'mixins';
+
+.happyhours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./../assest/rinck.jpg);
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    left: 0px;
+    top: 4069px;
+    margin: 0 auto;
+    overflow: hidden;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+
+        // position: absolute;
+        // width: 720px;
+        // height: 240px;
+        // left: 610px;
+        // top: 330px;
+
+        &__text1{
+            @include text(720px, 166px, center, #DCCA87,'Cormorant Upright', 600, 128px, 0.03em, 0);
+        }
+
+        &__text2{
+            @include text(720px, 42px, center, #FFFFFF,'Cormorant Upright', 700, 32px, 0.04em, 0);
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@import 'mixins';
+
+.today{
+    position:absolute;
+    width: 1300px;
+    height: 970px;
+    left: 310px;
+    top: 5121px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        &__text1{
+            @include text(280px, 30px, center, #FFFFFF,'Cormorant Upright', 700, 23px, 0.04em, 0);
+        }
+
+        &__text2{
+            @include text(720px, 83px, center, #DCCA87,'Cormorant Upright', 600, 64px, 0.04em, 0);
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 32px;
+
+        width: 1300px;
+        height: 660px;
+
+        &__winebeer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 48px;
+
+            width: 412px;
+            height: 596px;
+        }
+
+        &__img{
+            width: 412px;
+            height: 660px;
+        }
+
+        &__cocktails{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 48px;
+
+            width: 412px;
+            height: 596px;
+        }
+
+        &__lable{
+            @include text(250px, 58px, center, #FFFFFF, 'Cormorant Upright', 600, 45px, 0.04em, 0);
+        }
+    }
+
+    &__button{
+        @include button(72px);
+    }
+    &__button:hover{
+        background:#968a60 ;
+    }
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    width: 412px;
+    height: 490px;
+
+    &__li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 412px;
+        height: 66px;
+
+        &__frame{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 32px;
+
+            width: 412px;
+            height: 30px;
+
+            &__name{
+                @include text(192px, 30px, start, #DCCA87, 'Cormorant Upright', 700, 23px, 0.04em, 0);
+            }
+
+            &__cost{
+                @include text(37px, 30px, start, #FFFFFF, 'Cormorant Upright', 700, 23px, 0.04em, 0);
+            }
+        }
+
+        &__description{
+            @include text(412px, 28px, start, #AAAAAA, 'Open Sans', 400, 16px, 0.04em, 0);
+        }
+    }
+}

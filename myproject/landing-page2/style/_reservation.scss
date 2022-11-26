@@ -1,0 +1,69 @@
+@import 'mixins';
+
+.reservation{
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 32px;
+    gap: 64px;
+
+    position: absolute;
+    width: 1364px;
+    height: 466px;
+    left: 278px;
+    top: 1251px;
+
+    /* 0C0C0C */
+    background: #0C0C0C;
+    border: 1px solid rgba(220, 202, 135, 0.2);
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        width: 350px;
+        height: 138px;
+        &__text1{
+            @include text(125px, 30px, center, #FFFFFF,'Cormorant Upright', 600, 23px, 0.04em, 0);   
+        }
+        &__text2{
+            @include text(370px, 83px, center, #DCCA87,'Cormorant Upright', 700, 64px, 0.03em, 0);
+        }
+    }
+
+    &__button{
+        @include button(69px);
+    }
+    &__button:hover{
+        background:#968a60 ;
+    }
+}
+
+.dialog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1300px;
+    height: 60px;
+
+    &__frame{
+        border: 1px solid #F5EFDB;
+        background: #0C0C0C;
+        @include text(412px, 60px, left, #FFFFFF,'Cormorant Upright', 600, 16px, 0.04em, 16px);
+        &__text{
+            @include text(58px, 28px, left, #AAAAAA,'Cormorant Upright', 600, 16px, 0.04em, 16px);
+        }
+    }
+}

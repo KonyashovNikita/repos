@@ -1,0 +1,94 @@
+.main {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./../assest/BG.png);
+    background-repeat: no-repeat;
+    height: 1099px;
+    width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 120px 0;
+}
+
+.header__logo {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style-type: none;
+    font-family: 'Open Sans', serif;
+}
+
+.navigation__link,
+.registration__link {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.header__registration {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.registration__link {
+    font-family: 'Open Sans', serif;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 32px;
+}
+
+.hero__img {
+    max-width: 634px;
+    max-height: 740px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.hero__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 181px;
+    line-height: 235px;
+    letter-spacing: 5%;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 100;
+}
+
+.hashtag {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    transform: rotate(-90deg);
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    line-height: 32px;
+}

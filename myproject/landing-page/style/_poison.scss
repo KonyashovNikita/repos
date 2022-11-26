@@ -1,0 +1,72 @@
+@import 'mixins';
+
+.poison{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+
+    position: absolute;
+    width: 1300px;
+    height: 802px;
+    left: 310px;
+    top: 3115px;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        &__text1{
+            @include text(282px, 30px, center, #FFFFFF,'Cormorant Upright', 600, 23px, 0.04em, 0);
+        }
+        &__text2{
+            @include text(547px, 83px, center, #DCCA87,'Cormorant Upright', 700, 64px, 0.03em, 0);
+        }
+    }
+
+    &__categories{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding:0;
+        width: 1300px;
+        height: 600px;
+        font-family: 'Cormorant Upright';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 130%;
+
+        &__beer{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./../assest/beer.jpg);
+            width: 410px;
+            height: 600px;
+        }
+
+        &__wine{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./../assest/wine.jpg);
+            width: 410px;
+            height: 600px;
+        }
+
+        &__cocktail{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./../assest/cocktails.jpg);
+            width: 410px;
+            height: 600px;
+        }
+    }
+}

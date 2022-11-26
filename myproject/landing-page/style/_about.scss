@@ -1,0 +1,79 @@
+@import 'mixins';
+
+.about{
+    position: absolute;
+    background-image: url(./../assest/BG.png);
+    width:1920px;
+    height: 1094px;
+    left: 0px;
+    top: 1869px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.img1{
+    position: absolute;
+    max-width: 523px;
+    max-height: 702px;
+    left: 310px;
+    top: 264px;
+}
+
+.img2{
+    position: absolute;
+    width: 634px;
+    height: 385px;
+    left: 976px;
+    top: 128px;
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    position: absolute;
+    width: 614px;
+    height: 413px;
+    left: 976px;
+    top: 553px;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 614px;
+        height: 221px;
+        &__text1{
+            @include text(95px, 30px, start, #FFFFFF, 'Cormorant Upright',600, 23px, 0.04em, 0);
+        }
+        &__text2{
+            @include text(618px, 166px, start, #DCCA87,'Cormorant Upright', 700, 64px, 0.03em, 0);
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+
+        &__text3{
+            @include text(525px, 84px, start, #AAAAAA, 'Open Sans', 400, 16px, 0.04em, 0);
+        }
+        &__button{
+            @include button(77px);
+        }
+        &__button:hover{
+            background:#968a60 ;
+        }
+    }
+}
+

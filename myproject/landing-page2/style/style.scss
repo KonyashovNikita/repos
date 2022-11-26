@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600;700&family=Open+Sans:wght@400;700&display=swap');
+@import 'main';
+@import 'about';
+@import 'reservation';
+@import 'happyhours';
+@import 'poison';
+@import 'today';
+
+
+// .vector1{
+//     position: absolute;
+//     width: 1607.91px;
+//     height: 10691.5px;
+//     left: 558.91px;
+//     top: 1201px;
+
+//     opacity: 0.2;
+//     border: 2px solid #ABABAB;
+//     transform: matrix(-1, 0, 0, 1, 0, 0);
+// }
+
+// .vector2{
+//     position: absolute;
+//     width: 2228px;
+//     height: 14908px;
+//     left: -144.5px;
+//     top: 1110.5px;
+    
+//     opacity: 0.2;
+//     border: 2px solid #ABABAB;
+// }
+
+body {
+    position: relative;
+    font-family: 'Cormorant Upright', serif;
+    background-color: #0C0B08;
+    color: #FFFFFF;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid black;
+    /* padding вокруг плашки */
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.group1{
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 1623px;
+    top: 1068px;
+}
+
+.group2{
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 146px;
+    top: 1872px;
+}
+
+.group3{
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 1567px;
+    top: 5063px;
+}
+
+.group4{
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 97px;
+    top: 6120px;
+}
+
+.group5{
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    left: 1562px;
+    top: 7265px;
+}
